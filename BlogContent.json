@@ -1,0 +1,30 @@
+[
+  {
+    "name" : "Deepak",
+    "time" : "13-4-2016",
+    "body" : "This is a nonstandard attribute used by iOS Safari Mobile which controls whether and how the text value for textual form control descendants should be automatically capitalized as it is entered/edited by the user. If the autocapitalize attribute is specified on an individual form control descendant, it trumps the form-wide autocapitalize setting. The non-deprecated values are available in iOS 5 and later.The default value is sentences. Possible values are:",
+    "no": 0
+
+  },
+
+  {
+    "name" : "Abhishek",
+    "time" : "13-4-2016",
+    "body" : "The form element that the button is associated with (its form owner). The value of the attribute must be the id attribute of a <form> element in the same document. If this attribute is not specified, the <button> element must be a descendant of a form element. This attribute enables you to place <button> elements anywhere within a document, not just as descendants of their <form> elements.",
+    "no": 1
+  },
+
+  {
+    "name" : "Ratnesh",
+    "time" : "13-4-2016",
+    "body" : "This is a nonstandard attribute used by iOS Safari Mobile which controls whether and how the text value for textual form control descendants should be automatically capitalized as it is entered/edited by the user. If the autocapitalize attribute is specified on an individual form control descendant, it trumps the form-wide autocapitalize setting. The non-deprecated values are available in iOS 5 and later. The default value is sentences. ",
+    "no"   : 2
+  },
+
+  {
+    "name" : "Manu Akash",
+    "time" : "14-4-2016",
+    "body" : "In its report, the State Department alleged that 'lack of accountability' for misconduct at all levels of government persisted, contributing to widespread impunity. Investigations and prosecutions of individual cases took place but lax enforcement, a shortage of trained police officers and an overburdened and under resourced court system contributed to infrequent convictions, it said.",
+    "no"   : 3
+  }
+]

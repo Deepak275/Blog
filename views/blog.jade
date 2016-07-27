@@ -1,0 +1,15 @@
+include ./layout.jade
+link(rel='stylesheet', href='/stylesheets/blog.css')
+include ./include/header.jade
+div.content
+    article
+        header
+          h3 Name : #{Blogger.name}
+          h3 Time : #{Blogger.time}
+          div(class = "edit-delete")
+            a(style = "text-decoration:none", href = "/",class = "edit") Edit
+            a(style = "text-decoration:none ", href = "/",class = "delete") Delete
+        section
+        p #{Blogger.body}
+
+include ./include/footer.jade

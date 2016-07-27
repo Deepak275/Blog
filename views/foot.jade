@@ -1,0 +1,7 @@
+extends layout
+
+block foot(style = "margin-bottom: 80px")
+  .bottom-nav(style= "padding: 10px")
+    a(class = "prev-button", href = "/?no=#{Blogger[].no - 1}") Prev Page
+    a(class = "next-button" href = "/?no=#{Blogger[].no + 1}") Next Page
+  
