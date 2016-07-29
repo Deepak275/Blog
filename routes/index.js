@@ -8,7 +8,7 @@ exports.getHomePage =  function(req, res, next) {
   // console.log('in the get mehtod middleware !!', req.query.no);
   console.log('in the gethome', req.body, req.query);
   //console.log("data :: ", bloggers);
-  if (!req.query) {
+  if (true) {
       var bloggerDetails = bloggers.map(function (obj) {
       var bDetails = {};
       bDetails["title"] = obj.title;
