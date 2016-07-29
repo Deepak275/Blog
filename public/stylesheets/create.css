@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+
+}
+
+.header {
+  display: flex;
+  flex-direction: row;;;
+  position: fixed;
+  justify-content: space-between;
+  align-items: inherit;
+  font-size: 1em;
+  width: 100%;
+  height: 10em;
+  background-color:antiquewhite;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+
+}
+
+
+.logo-link {
+  height: 8em;
+  display: flex;
+  margin-left: 1.6em;
+  flex-direction: column;
+  top: 9%;
+  align-self: center;
+}
+
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 8px;
+  align-self: center;
+  margin-right: 0.8em;
+  font-size: 2em;
+  width: 47%;
+  height: 40%;
+  background: #968d81
+}
+
+
+.home .create .about-us {
+  width: 1%;
+}
+
+.balance {
+  height: 8em;
+  display: flex;
+  margin-left: 26px;
+  flex-direction: column;
+  top: 9%;
+  align-self: center;
+}
+
+
+.logo {
+  width: inherit;
+  height: inherit;
+  align-self: baseline
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40em;
+  width: 85%;
+  max-width: 85%;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10em;
+  background-color: aliceblue;
+}
+
+form {
+  height: auto;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  height: auto;
+  padding: 1em;
+}
+
+.entries {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.8em;
+  height: 11em;
+
+
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.2em;
+  padding: 0.5em;
+  width: 30em;
+  height: 8em;
+
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 29.2em;
+  height: 20em;
+  padding: 0.3em;
+}
+
+.topic {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 29.2em;
+  height: 18em;
+  padding: 0.3em;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 29.2em;
+  height: 18em;
+  padding: 0.3em;
+}
+
+#label1 {
+  align-self: center;
+  width: 4em;
+  font-size: 1.3em;
+  margin-right: 30px;
+  padding: 0.2em;
+}
+
+#label2 {
+  align-self: center;
+  width: 4em;
+  font-size: 1.3em;
+  margin-right: 11px;
+  padding: 0.2em;
+}
+
+#label3 {
+  align-self: center;
+  width: 4em;
+  font-size: 1.3em;
+  margin-right: 13px;
+  padding: 0.2em;
+}
+
+
+.title-text {
+  width: 29.1em;
+  height: 2em;
+  font-size: 1em;
+}
+
+.topic-text {
+  width: 12em;
+  font-size: 1em;
+}
+
+.author-text {
+  width: 12em;
+  font-size: 1em
+}
+
+.submit {
+  display: flex;
+  padding: 6px;
+  width: 7em;
+  height: 3em;
+
+}
+
+button {
+  width: inherit;
+  height: 3em;
+  font-size: 0.8em;
+}
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  padding: 2.7em;
+  height: 25em;
+}
+
+.content-text {
+  height: inherit;
+  font-size: 0.8em;
+}
+
+
+@media all and (max-width: 640px) {
+
+  .logo-link {
+    height: 4em;
+  }
+
+  .logo {
+    width: inherit;
+    left: 0.8em;
+  }
+
+  .menu {
+    font-size: 0.9em;
+  }
+
+  .header {
+    height: 5em;
+  }
+
+  .content {
+    margin-top: 80px;
+    padding: 2px 15px 2px 15px;
+    height: 75%;
+  }
+
+  fieldset {
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px
+    padding-top: 20px;
+  }
+
+  legend {
+    font-size: 0.8em;
+  }
+
+  .entries {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 18em;
+    height: 15em;
+  }
+
+  .user-details {
+    width: 24em;
+    height: 14em;
+    font-size: 0.7em
+  }
+
+  .title {
+    width: 23em;
+    height: 18em;
+  }
+
+  #label1 {
+    margin-right: 17px;
+    width: 3.8em;
+  }
+
+  .title-text {
+    width: 16em;
+    height: 3em;
+  }
+
+  .topic {
+    width: 23em;
+    height: 18em;
+  }
+
+  #label2 {
+    margin-right: 17px;
+    width: 3.8em;
+  }
+
+  .topic-text {
+    width: 8em;
+    height: 2em;
+  }
+
+  .author {
+    width: 23em;
+    height: 18em;
+  }
+
+  #label3 {
+    margin-right: 17px;
+    width: 3.8em;
+  }
+
+  .author-text {
+    width: 8em;
+    height: 2em;
+  }
+
+  .submit {
+    width: 5em;
+    height: 3em;
+  }
+
+  .blog-content {
+    padding: 1em;
+
+  }
+
+}
+
+
+/*#label {
+  align-self: center;
+  width: 4em;
+  font-size: 1.3em;
+  margin-right: 13px;
+  padding: 0.2em;
+}*/

@@ -1,21 +1,23 @@
-extends createLayout
-
-block content
-  div.form
-    fieldset.create-fieldset
-      legend #[h2 Write a blog]
-      form(action="/create" method="POST")
-        div.title
-          label#label1 Title :
-          textarea.blogTitle(name="title", rows="2" cols="60") Write Title here !!
-        div.topic
-          label#label2(style = "" for = "") Topic :
-          input.topicName(name = "topic", type="text")
-        div.author
-          label#label3(style = "" for = "") Author :
-          input.authorName(name = "author", type="text")
-        div.content
-          textarea.blogContent(name="content")
+include ./layout.jade
+link(rel='stylesheet', href='/stylesheets/create.css')
+include ./include/header.jade
+div.content
+  fieldset
+    legend #[h2 Write a blog]
+    form(action="/create" method="POST" style='height: auto;')
+      div.entries
+        div.user-details
+          div.title
+            label#label1 Title :
+            textarea.title-text(name="title", rows="2" cols="60") Write Title here !!
+          div.topic
+            label#label2(style = "" for = "") Topic :
+            input.topic-text(name = "topic", type="text")
+          div.author
+            label#label3(style = "" for = "") Author :
+            input.author-text(name = "author", type="text")
         div.submit
-          button.publish(value= "publish") Publish.
-          <!--input.publish(type = "button", value = "Publish !!")-->
+          button(value= "publish") Publish.
+
+      div.blog-content
+        textarea.content-text(name="content")

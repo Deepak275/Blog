@@ -4,12 +4,15 @@ include ./include/header.jade
 div.content
     article
         header
-          h3 Name : #{Blogger.name}
+          h3 Title : #{Blogger.name}
+          h3 Author : #{Blogger.name}
           h3 Time : #{Blogger.time}
-          div(class = "edit-delete")
-            a(style = "text-decoration:none", href = "/",class = "edit") Edit
-            a(style = "text-decoration:none ", href = "/",class = "delete") Delete
+          div(class = "edit-del")
+            div.edit-btn
+              a(style = "text-decoration:none", href = "/",class = "edit") Edit
+            div.del-btn
+              a(style = "text-decoration:none ", href = "/",class = "delete") Delete
         section
-        p #{Blogger.body}
-
+          p #{Blogger.body}
+          
 include ./include/footer.jade

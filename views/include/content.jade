@@ -1,17 +1,14 @@
-div.tag
-  div.message
-    h3() Welcome to Blogging !!
-  a(style='display: inline-flex; margin-right: 2%; width: 160px; height: 66%;', href='/create')
-    div.btn
-      h2 Write your story.
-
 div.content
+  div.tag
+    div.message
+      h3() Welcome to Blogging !!
+
   -var i = 0
   each index in  Blogger
+      a.link(style = "text-decoration: none", href = "/getBlog/?no=#{index.no}")
         fieldset.blog-list(style = "margin-top: 20px")
           article(style='position: relative')
-            a(style = "text-decoration: none", href = "/getBlog/?no=#{index.no}")
-              h3.head1 Name : #{index.name}
+              h3.head1 Title : #{index.title}
               h3.head2 Time : #{index.time}
 
             -i++  // "-" is used to not let ++ to get display

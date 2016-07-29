@@ -7,39 +7,76 @@ body {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  /*margin-top: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
-  padding: 0px;
-  position: absolute;
-  justify-content: space-between;
-  top: 60%;
-  width: 100%;*/
+
 }
 
 .header {
   display: flex;
-  flex-direction: column;;
+  flex-direction: row;;;
   position: fixed;
+  justify-content: space-between;
+  align-items: inherit;
   font-size: 1em;
-  align-items: stretch;
   width: 100%;
   height: 10em;
   background-color:antiquewhite;
   margin: 0;
   padding: 0;
-  top: 0;
   z-index: 100;
-  border-top-left-radius: 2em;
-  border-top-right-radius: 2em;
 
 }
 
-.logo {
-  width: 7%;
-  position: absolute;
-  left: 2.01em;
+
+.logo-link {
+  height: 8em;
+  display: flex;
+  margin-left: 1.6em;
+  flex-direction: column;
   top: 9%;
+  align-self: center;
+}
+
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 8px;
+  align-self: center;
+  margin-right: 0.8em;
+  font-size: 2em;
+  width: 47%;
+  height: 40%;
+  background: #968d81
+}
+
+
+.home .create .about-us {
+  width: 1%;
+}
+
+.balance {
+  height: 8em;
+  display: flex;
+  margin-left: 26px;
+  flex-direction: column;
+  top: 9%;
+  align-self: center;
+}
+/*.create {
+  display: inline-flex;
+  margin-right: 1%;
+  align-self: center;
+  width: 10em;
+  /*height: 2em*/
+  /*height: 52%;
+  text-decoration: none;
+}*/
+
+.logo {
+  width: inherit;
+  height: inherit;
+  align-self: baseline
 }
 
 .tag {
@@ -50,28 +87,24 @@ body {
   height: 5em;
   padding: 0;
   margin: 0;
-  margin-top: 9.5em;
   position: relative;
-  background-color:antiquewhite;
-  border-bottom-left-radius: 2em;
-  border-bottom-right-radius: 2em;
+  background-color:aliceblue;
+  border-radius: 2em
 
 }
 
 
 .message {
   display: inline-flex;
-  width: 16%;
+  width: 20%;
   height: 42px;
   align-self: center;
-
-
-      height: 42px;
-      margin-left: 2%;
-      justify-content: center;
-      align-self: center
+  height: 42px;
+  margin-left: 2%;
+  justify-content: center;
+  align-self: center
 }
-
+/*
 .btn {
   display: flex;
   flex-direction: column;
@@ -83,8 +116,8 @@ body {
   margin-right: 0%;
   border-radius: 888em;
   border-color: #b31d54;
-  background: ivory;
-}
+  background: aliceblue;
+}*/
 
 
 h3 {
@@ -105,19 +138,41 @@ h2 {
   font-size: 1.1em;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10em;
+  margin-bottom: 4em;
+  position: relative;
+  height: auto;
+  background: aliceblue;
 
+
+}
 
     /* position: absolute; */
 
-@media  (max-width: 600px) {
+@media all and (max-width: 640px) {
+
+  .logo-link {
+    height: 4em;
+  }
 
   .logo {
-    width: 14%;
+    width: inherit;
     left: 0.8em;
   }
 
+  .menu {
+    font-size: 0.9em;
+  }
+
   .header {
-    height: 5em
+    height: 5em;
   }
 
   h3 {
@@ -131,23 +186,38 @@ h2 {
   }
 
   .tag {
-    margin-top: 5em;
+    margin-top: 5.2em;
+    height: 45px;
+    width: 23.7em;
+    margin-right: 0em;
+
   }
 
-  .btn {
-    width: 9em;
-    margin-right: 1em;
+  .message {
+    width: 42%;
+    height: 100%
   }
+
+
+  /*.create {
+    width: 160px;
+    margin-right: 0em;
+    height: 52%%;
+  }*/
+
+  .content {
+
+    margin-top: 0em;
+    margin-bottom: 4em;
+  }
+
+  .edit-del {
+    margin-top: 12px;
+  }
+
 }
 
-.content {
-  display: flex;
-  padding: 0;
-  flex-direction: column;
-  position: relative;
-  height: 32em;
-  background: #fff
-}
+
 
 .blog-list {
   display: flex;
@@ -160,6 +230,12 @@ h2 {
   margin: 0;
   padding: 0;
 
+}
+
+
+.link {
+  display: flex;
+  flex-direction: column;
 }
 
 .head1 {

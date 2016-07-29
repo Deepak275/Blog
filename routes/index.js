@@ -8,12 +8,10 @@ exports.getHomePage =  function(req, res, next) {
   // console.log('in the get mehtod middleware !!', req.query.no);
   console.log('in the gethome', req.body, req.query);
   //console.log("data :: ", bloggers);
-  if (!req.query.no) {
-    console.log('in the bDetails!!');
-
-    var bloggerDetails = bloggers.map(function (obj) {
+  if (!req.query) {
+      var bloggerDetails = bloggers.map(function (obj) {
       var bDetails = {};
-      bDetails["name"] = obj.name;
+      bDetails["title"] = obj.title;
       bDetails["time"] = obj.time;
       bDetails["no"] = obj.no;
       return bDetails;
@@ -33,7 +31,7 @@ exports.getBlog = function (req, res, next) {
      return res.render('blog', { Blogger : Blogger });
    } else {
      var error = new Error('Blog is not found !!');
-     error.status = 400;
+     error.status = 404;
      return next(error);
    }
 

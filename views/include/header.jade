@@ -1,2 +1,12 @@
 div.header
-  a(href = "/") #[img.logo(src='/images/logo.png' )]
+  a.logo-link(href = "/") #[img.logo(src='/images/logo.png' )]
+  div.menu
+    div.home #[a(style="width:inherit; text-decoration: none", href='/') Home]
+    div.create #[a(style="width:inherit; text-decoration: none", href='/create') Create]
+    div.about-us #[a(style="width:inherit; text-decoration: none" ,href='/about') About Us]
+
+  //  div.balance
+  //
+    a.create(href='/create')
+      div.btn
+        h2 Write your story.
